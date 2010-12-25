@@ -40,7 +40,6 @@ module PollTags
   }
   tag 'poll' do |tag|
     options = tag.attr.dup
-    tag.locals.page.cache = false
     if Poll.count > 0
       tag.locals.poll = find_poll(tag, options)
       tag.expand
@@ -278,6 +277,9 @@ module PollTags
     <pre><code><r:polls [per_page="10"] [by="attribute"] [order="asc|desc"] [show_current="true|false"] /></code></pre>
   }
   tag 'polls' do |tag|
+    #FIXXME: this is not the right place to switch of caching of the page. always show a not cached result
+    tag.locals.page.cache = false
+
     if Poll.count > 0
       options = find_options(tag)
 

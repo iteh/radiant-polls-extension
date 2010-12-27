@@ -6,7 +6,7 @@ class PollsExtension < Radiant::Extension
   def activate
     require_dependency 'application_controller'
     tab 'Content' do
-      add_item 'Polls', '/admin/polls', :after => 'Pages'
+      add_item 'Umfragen', '/admin/polls', :after => 'Pages'
     end
     if Radiant::Config.table_exists?
       Radiant::Config['paginate.url_route'] = '' unless Radiant::Config['paginate.url_route']

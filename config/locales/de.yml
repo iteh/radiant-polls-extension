@@ -1,0 +1,25 @@
+---
+de:
+  polls_action:
+    edit: 'Bearbeite Umfrage'
+    new: 'Neue Umfrage'
+  polls_form:
+    label:
+      title: 'Title'
+      start_date: 'Startdatum'
+      options: 'Optionen'
+      add_option: 'Füge eine Antwortmöglichkeit hinzu'
+  polls_index:
+    title: 'Umfragen
+    instructions: 'Klicken Sie auf eine Umfrage um sie zu bearbeiten, or clicken <code>Löschen</code> um sie zu entfernen.'
+    column:
+      title: 'Title'
+      start_date: 'Startdatum'
+      responses: 'Antworten'
+    empty: 'Es existieren noch keine Umfragen. Bitte auf <code>New Poll</code> clicken um loszulegen.'
+    reset: 'Lösche Antworten'
+    reset_confirm: 'Ergebnisse wirklich löschen?'
+    delete_confirm: 'Umfrage wirklich entfernen?'
+    results: 'Ergebnisse'
+  polls_controller:
+    responses_cleared: 'Die Antworten zu "{{poll}}" wurden entfernt.'

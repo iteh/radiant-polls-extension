@@ -10,7 +10,7 @@ de:
       options: 'Optionen'
       add_option: 'Füge eine Antwortmöglichkeit hinzu'
   polls_index:
-    title: 'Umfragen
+    title: 'Umfragen'
     instructions: 'Klicken Sie auf eine Umfrage um sie zu bearbeiten, or clicken <code>Löschen</code> um sie zu entfernen.'
     column:
       title: 'Title'
